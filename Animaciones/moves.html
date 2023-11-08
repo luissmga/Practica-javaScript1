@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos 2D con HTML y Javascript</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 100vw; /* Corrección: se cambió "wh" a "vw" para el ancho de la ventana. */
+            height: 100vh;
+            background-color: black;
+            display: grid;
+            place-items: center;
+            box-sizing: border-box;
+            color: white;
+        }
+        .container {
+            width: 80%; /* Corrección: Se cambió "*" a ".container" para aplicar el estilo a la clase. */
+            text-align: center;
+        }
+        canvas {
+            background-color: rgb(9, 9, 9);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gráficos 2D con HTML y Javascript</h1>
+        <canvas id="lienzo" width="650" height="400"></canvas>
+    </div>
+    <script src="./moves.js"></script>
+</body>
+</html>
